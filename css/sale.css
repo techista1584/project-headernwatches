@@ -1,0 +1,468 @@
+:root {
+    --white: #FFF;
+    --black: #141414;
+    --darkgreen: #1E2827;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: var(--white); */
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+}
+
+
+
+* {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.li {
+    text-align: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Epilogue";
+    /* color: var(--white); */
+}
+
+
+
+
+.product-tag {
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.discounted-price {
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.36px;
+}
+
+.original-price {
+    width: 32px;
+    height: 11px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+    text-decoration-line: line-through;
+}
+
+.desc-heading,
+.specs-heading {
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+
+/*
+    Check the Description Text follow the figma */
+.description-text,
+.specs-list {
+    width: 335px;
+    height: 132px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.14px;
+}
+
+
+
+
+.sale-container {
+    width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content: flex-start;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 32px 32px;
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+        padding: 80px 132px 160px 132px;
+
+    }
+}
+
+.sale-title {
+    color: var(--black);
+    font-family: Epilogue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+        color: var(--darkgreen);
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.8px;
+    }
+
+
+}
+
+.sale-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        flex-direction: row;
+
+    }
+}
+
+.watch-img-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {}
+}
+
+.img-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.sale-image-small {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+        width: 146px;
+        height: 146px;
+
+    }
+
+}
+
+.large-image-container {
+    position: relative;
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    width: 235px;
+    height: 350px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 406px;
+        height: 614px;
+        flex-shrink: 0;
+    }
+}
+
+.sale-image-large {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    @media screen and (min-width: 768px) {
+        flex-shrink: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        flex-shrink: 0;
+
+    }
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.product-name {
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 38px;
+        font-style: normal;
+        line-height: 40px;
+        letter-spacing: -0.76px;
+    }
+}
+
+.product-description {
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+
+        width: 100%;
+
+        padding-left: 69px;
+        padding-right: 69px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        width: 369px;
+        gap: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+}
+
+
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+.product-tag-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*
+    Check the Description Text follow the figma */
+.description-text,
+.specs-list {
+    width: 100%;
+    height: 132px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.14px;
+}
+
+
+
+
+/*
+    need to apply pseudo element */
+.detail-header {
+    display: flex;
+    padding: 8px 0px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* gap: 215px; */
+
+}
+
+.specs-header {
+    display: flex;
+    padding: 8px 0px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* gap: 121px; */
+
+}
+
+.product-details,
+.product-specs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+
+    @media screen and (min-width: 768px) {
+
+        width: 100%;
+
+    }
+
+
+}
+
+.product-details {
+    @media screen and (min-width: 1440px) {
+
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+}
+
+.product-specs {
+    @media screen and (min-width: 1440px) {
+
+        width: 100%;
+        margin-bottom: 41px;
+
+    }
+}
+
+/*
+    Check the Description Text follow the figma */
+.description-text,
+.specs-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.14px;
+
+    @media screen and (min-width: 768px) {
+
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+.detail-header,
+.specs-header {
+    position: relative;
+}
+
+.detail-header::before,
+.specs-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1%;
+    background-color: var(--black, #141414);
+}

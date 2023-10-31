@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nwatch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/nwatches.css">
+    <link rel="stylesheet" href="./css/sale.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/sale.js"></script>
+    <script type="module" src="./js/menu_burger.js"></script>   
+    <script type="module" src="./js/hero-slider.js"></script>   
+    <script type="module" src="./js/preloader.js"></script>   
+    <script type="module" src="./js/scroll-to-block.js"></script>   
+</head>
+
+<body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- <include src="./partials/header.html"></include> -->
+    <header class="header">
+        <div class="container header-mobile">
+            <a class="header-logo" href="#" data-scrollto="body" data-menuClose>
+                <img class="img-logo" src="./icons/tws-icon.svg" alt="logo" width="14" height="14">
+                <span class="header-logo-text">thewatchspot</span>
+            </a>
+            <nav class="header-navigation">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a href="#" class="header-link underline" data-scrollto="section-about" data-menuToggle>ABOUT US</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link underline" data-scrollto="section-catalog"
+                            data-menuToggle>CATALOG</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link underline" data-scrollto="section-sale" data-menuToggle>SALE</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="burger" aria-label="menu burger" data-menuToggle>
+                <svg width="24" height="24">
+                    <use href="/icons/icon.svg#mobile-menu-icon" class="burger-svg"></use>
+                    <use href="/icons/icon.svg#icon-close" class="close-svg"></use>
+                </svg>
+            </button>
+            <a class="header-contact-phone button" href="tel:+380684439426">+380 (68) 443-94-26</a>
+        </div>
+    </header>
+    <!-- <include src="./partials/hero.html"></include> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <section class="section hero">
+        <div class="container hero__container">
+            <div class="hero__background__container">
+                <div class="hero__txt">
+                    <h1>Welcome to our collection of premium watches</h1>
+                </div>
+                <div class="swiper swiper__container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="/images/asset/asset-1.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/asset/asset-2.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/asset/asset-3.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/asset/asset-4.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/asset/asset-5.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons">
+                    <ul class="swiper-buttons-list">
+                        <li class="swiper-buttons-items">
+                            <button class="swiper-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="swiper-buttons-items">
+                            <button class="swiper-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="counter-list list">
+                        <li class="slider-count">01</li>
+                        <li class="slider-range">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="2" viewBox="0 0 32 2" fill="none">
+                                <path d="M0 1H32" stroke="white" />
+                            </svg>
+                        </li>
+                        <li class="slider-count">05</li>
+                    </ul>
+                </div>
+                <div class="hero__backgrnd__txt">
+                    <p>
+                        Our watches are not just timepieces, but also an expression of your
+                        personality and lifestyle. From classic designs to modern ones, we
+                        have a watch to suit every taste and occasion.
+                    </p>
+                </div>
+                <div class="hero__img">
+                    <img src="./images/wrist-watch.jpg" alt="wrist-watch">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="
+    https://cdn.jsdelivr.net/npm/swiper@10.3/swiper-bundle.min.js
+    "></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper__container', {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
+    </script>
+
+    <!-- <include src="./partials/aboutus.html"></include> -->
+    <section class="aboutus">
+        <div class="container aboutus-container">
+            <h2 class="aboutus-header">
+                About us
+            </h2>
+            <div class="aboutus-description">
+                <p class="aboutus-description-item">
+                    Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our
+                    selection of timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that
+                    you'll always have a reliable and stylish accessory on your wrist.
+                </p>
+                <p class="aboutus-description-item">
+                    At our premium watch collection, we believe that a watch is more than just a timekeeping device – it's a
+                    statement piece that reflects your personality and style. So why settle for anything less than the best?
+                    Browse our collection today and discover the perfect watch for you.
+                </p>
+            </div>
+        </div>
+        <div class="container aboutus-gif-container">
+            <img class="aboutus-gif-container-img" src="/images/watch/watchspot.gif" alt="watch gif">
+        </div>
+    </section>
+    <!-- <include src="./partials/catalog.html"></include> -->
+    <section class="section catalog">
+        <div class="catalog-container">
+            <h2 class="catalog-header-text"> Catalog </h2>
+            <ul class="catalog-list list">
+                <li class="catalog-list-item">
+                    <div class="catalog-info-container">
+                        <div class="catalog-figure-wrapper-container">
+                            <figure class="catalog-figure">
+                                <figcaption class="catalog-figcaption">
+                                    <div class="info-container">
+                                        <ul class="info-list">
+                                            <li class="info-item">
+                                                <h3 class="info-header"> Description </h3>
+                                                <p class="info-paragraph"> Richly detailed with an <br>
+                                                    understated design - the Police
+                                                    Men's Greenlane watch. </p>
+                                            </li>
+                                            <li class="info-item">
+                                                <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                                <p class="info-paragraph">Gender: man <br>
+                                                    Size: 46x54.5mm <br>
+                                                    Case Colour: Steel <br>
+                                                    Band Material: Metal <br>
+                                                    Case Material: Metal <br>
+                                                    Features: Multifunction <br>
+                                                    Water Resistant: 5 (ATM) <br>
+                                                    Band Colour: Steel </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </figcaption>
+                                <img class="watches" src="/images/watch/watch1-tube.jpg" alt="watch1">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
+                        <p class="watch-price"> €395 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" src="/images/watch/watch2-avondale.jpg" alt="watch2">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Avondale Watch Police For Men </h3>
+                        <p class="watch-price"> €800 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch3-diver.jpg" alt="watch3">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name">Diver 300M Co-Axial Master Chronometer Chronograph</h3>
+                        <p class="watch-price"> €600 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch4-diver.jpg" alt="watch4">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Diver 300M Co-Axial Master Chronometer </h3>
+                        <p class="watch-price"> €1400 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <a href="#" class="watch-heart-icon-link d-none1">
+                            <svg width="24" height="24" class="heart">
+                                <use href="/src/images/icon.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch5-taman.jpg" alt="watch5">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Taman Watch By Police For Men</h3>
+                        <p class="watch-price"> €500 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <a href="#" class="watch-heart-icon-link d-none1">
+                            <svg width="24" height="24" class="heart">
+                                <use href="/src/images/icon.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch6-malawi.jpg" alt="watch6">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Malawi Watch Police For Men </h3>
+                        <p class="watch-price"> €555 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch7-diver.jpg" alt="watch7">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Diver 300M Co-Axial Master Chronometer </h3>
+                        <p class="watch-price"> €1200</p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch8-greenlane.jpg" alt="watch8">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Greenlane Watch By Police For Men </h3>
+                        <p class="watch-price"> €1000 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item d-none">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch9-squardrc.jpg" alt="watch9">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Squardrc 5402 Chrono </h3>
+                        <p class="watch-price"> €359 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item d-none">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch10-diver.jpg" alt="watch10">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Diver 300M Co-Axial Master</h3>
+                        <p class="watch-price"> €400 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item d-none">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch11-citizen.jpg" alt="watch11">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Citizen </h3>
+                        <p class="watch-price"> €519 </p>
+                    </div>
+                </li>
+    
+                <li class="catalog-list-item d-none">
+                    <div class="catalog-figure-wrapper-container">
+                        <figure class="catalog-figure">
+                            <figcaption class="catalog-figcaption">
+                                <div class="info-container">
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <h3 class="info-header"> Description </h3>
+                                            <p class="info-paragraph"> Richly detailed with an <br>
+                                                understated design - the Police
+                                                Men's Greenlane watch.</p>
+                                        </li>
+                                        <li class="info-item">
+                                            <h3 class="info-header"> DETAILS & FEATURESTION </h3>
+                                            <p class="info-paragraph"> Gender: man <br>
+                                                Size: 46x54.5mm <br>
+                                                Case Colour: Steel <br>
+                                                Band Material: Metal <br>
+                                                Case Material: Metal <br>
+                                                Features: Multifunction <br>
+                                                Water Resistant: 5 (ATM) <br>
+                                                Band Colour: Steel</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                            <img class="watches" srcset="/images/watch/watch12-armani.jpg" alt="watch12">
+                        </figure>
+                    </div>
+                    <div class="catalog-item-details-container">
+                        <h3 class="watch-product-name"> Armani Exchange </h3>
+                        <p class="watch-price"> €400 </p>
+                    </div>
+                </li>
+            </ul>
+            <!-- cyfred -->
+            <div class="button-container">
+                <button class="catalog-buy-button" type="button" data-modal-open>BUY NOW</button>
+            </div>
+        </div>
+        <div class="modal is-hidden container" data-modal>
+            <div class="modal-content">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="modal-close-icon" width="20" height="20">
+                        <use href="/src/images/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="modal-content-list list">
+                    <li class="modal-content-list-item">
+                        <img class="watch-buy" srcset="/src/images/catalog/watch-buynow.jpg" alt="watch-buynow">
+                        <h3 class="watch-product-name"> Tube Watch S42 Date Steel With Black Case </h3>
+                        <p class="watch-price"> €395 </p>
+                    </li>
+                    <li class="modal-content-list-item">
+                        <form class="buynow-form">
+                            <label class="buynow-form-field">
+                                <span class="buynow-form-label">Full name</span>
+                                <input class="buynow-form-input" type="text" name="full-name" required
+                                    placeholder="Enter your full name">
+                            </label>
+                            <label class="buynow-form-field">
+                                <span class="buynow-form-label">Enter your email</span>
+                                <input class="buynow-form-input" type="email" name="user-email" required
+                                    placeholder="Enter your email">
+                            </label>
+                            <label class="buynow-form-field">
+                                <span class="buynow-form-label">Enter card</span>
+                                <input class="buynow-form-input" type="text" name="card-number" required
+                                    placeholder="Enter card">
+                            </label>
+                            <label class="buynow-form-field buynow-form-comment">
+                                <span class="buynow-form-label">Comments</span>
+                                <textarea class="buynow-form-textarea" name="user-feedback" rows="8"
+                                    placeholder="Enter your text"></textarea>
+                            </label>
+                            <button class="buynow-form-submit" type="submit">SUBMIT</button>
+                            <span class="buynow-form-agree-text">By clicking on "Submit" button, you agree to our
+                                <a class="form-terms" href="">Privacy Policy</a>
+                                , and allow Promodo to use this
+                                information for marketing purposes.
+                            </span>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- <include src="./partials/nwatches.html"></include> -->
+    <section class="section">
+        <div class="container">
+            <h2 class="new-watches-text">New watches</h2>
+            <p class="title">Green And Bronze—The Match Made In Heaven</p>
+            <ul class="new-watches-list list">
+                <li class="new-watches-item" data-aos="fade-in" data-aos-easing="ease-out-cubic" data-aos-duration="800">
+                    <img srcset="/images/nwatch/green@2x.jpg" src="/images/nwatch/green1x.jpg" alt="watch on hand"
+                        class="new-watches-page" width="576" height="472" />
+                </li>
+                <li class="new-watches-item" data-aos="fade-in" data-aos-easing="ease-out-cubic" data-aos-duration="800">
+                    <img srcset="/images/nwatch/bronze@2x.jpg" src="/images/nwatch/bronze1x.jpg"
+                        alt="wrist watch on a dark background" class="new-watches-page" width="576" height="472" />
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- <include src="./partials/sale.html"></include> -->
+    <section class="sale">
+        <div class="sale-container">
+            <h2 class="sale-title">Sale</h2>
+            <div class="sale-content">
+                <div class="watch-img-block">
+                    <ul class="img-list">
+                        <li class="img-item">
+                            <img class="sale-image-small" src="/images/image/image-67.jpg"
+                                alt="Police Greenlane watch top view" />
+                        </li>
+                        <li class="img-item">
+                            <img class="sale-image-small" src="/images/image/image-64.jpg"
+                                alt="Police Greenlane watch top-side view" />
+                        </li>
+                        <li class="img-item">
+                            <img class="sale-image-small" src="/images/image/image-65.jpg"
+                                alt="Police Greenlane watch backview" />
+                        </li>
+                        <li class="img-item">
+                            <img class="sale-image-small" src="/images/image/image-66.jpg"
+                                alt="Police Greenlane watch closeup view" />
+                        </li>
+                    </ul>
+                    <div class="large-image-container">
+                        <img class="sale-image-large" id="large-image" src="/images/image/image-671.png" alt="Larger image" />
+                    </div>
+                </div>
+                <div class="product-description">
+                    <div class="product-info-container">
+                        <div class="product-info">
+                            <h3 class="product-name">Greenlane Watch By Police For MenHT</h3>
+                        </div>
+                        <div class="product-tag-container">
+                            <p class="product-tag">Product tag: PEWJK2227003</p>
+                            <div class="product-price">
+                                <span class="discounted-price">€700</span>
+                                <span class="original-price">€1000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="detail-header">
+                            <h4 class="desc-heading">Description</h4>
+                            <svg class="minus-icon" width="16" height="2">
+                                <use href="/src/images/icon.svg#minus"></use>
+                            </svg>
+                        </div>
+                        <p class="description-text">
+                            Richly detailed with an understated design - the Police Men’s Greenlane watch features a
+                            versatile multifunction design that fits effortlessly into work and play. The steel case is
+                            adorned
+                            with a semi-transparent black dial. The timepiece exhibits a contrast through a black IP
+                            bracelet
+                            with matching crown and pushers.
+                        </p>
+                    </div>
+                    <div class="product-specs">
+                        <div class="specs-header">
+                            <h4 class="specs-heading">Details & Features</h4>
+                            <svg class="minus-icon" width="16" height="2">
+                                <use href="/src/images/icon.svg#minus"></use>
+                            </svg>
+                        </div>
+                        <ul class="specs-list">
+                            <li class="specs-item">Gender: Man</li>
+                            <li class="specs-item">Size: 46x54.5mm</li>
+                            <li class="specs-item">Case Colour: Steel</li>
+                            <li class="specs-item">Band Material: Metal</li>
+                            <li class="specs-item">Case Material: Metal</li>
+                            <li class="specs-item">Features: Multifunction</li>
+                            <li class="specs-item">Water Resistant: 5 (ATM)</li>
+                            <li class="specs-item">Band Colour: Steel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <include src="./partials/footer.html"></include> -->
+    <footer class="footer">
+        <div class="container-footer">
+            <!-- first block -->
+            <div class="footer-logo-container ">
+                <div class="footer-contact-info">
+                    <a class="icon-footer-item-link" href="#">
+                        <svg class="icon-logo">
+                            <use href="./images/icon.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <address class="footer-address-link">
+                        <a class="phone-link" href="tel:+380(68)4439426">+380 (68) 443-94-26</a>
+                        <p class="footer-address-detail">
+                            <a class="map-link"
+                                href="https://maps.google.com/?q=1678+S.+Pioneer+Road+Salt+Lake+City+UT+84104"
+                                target="_blank">
+                                1678 S. Pioneer Road<br>
+                                Salt Lake City<br>
+                                UT 84104
+                            </a>
+                        </p>
+                    </address>
+                </div>
+                <nav class="footer-navigation">
+                    <ul class="navigation-list">
+                        <li class="navigaviton-list-item">
+                            <a href="./partials/aboutus.html" class="navigation-list-item-link">About Us</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a href="./partials/catalog.html" class="navigation-list-item-link">Catalog</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a href="./partials/sale.html" class="navigation-list-item-link">Sale</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- second block -->
+            <div class="footer-social-media">
+                <ul class="icon-footer-container">
+                    <li class="icon-footer-item">
+                        <a class="icon-footer-item-link" href="https://www.facebook.com" target="_blank">
+                            <svg class="icon-footer" aria-label="Facebook">
+                                <use xlink:href="./images/icon.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-footer-item">
+                        <a class="icon-footer-item-link" href="https://www.instagram.com" target="_blank">
+                            <svg class="icon-footer" aria-label="Instagram">
+                                <use xlink:href="./images/icon.svg#icon-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon-footer-item">
+                        <a class="icon-footer-item-link" href="https://www.youtube.com" target="_blank">
+                            <svg class="icon-footer" aria-label="YouTube">
+                                <use xlink:href="./images/icon.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- third block -->
+            <div class="footer-links">
+                <p class="copyright">&copy;2022 The Watch Spot. All rights reserved.</p>
+                <div class="footer-links-items">
+                    <p class="privacy-policy">Privacy Policy</p>
+                    <p class="terms-of-service">Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,63 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/epilogue/v3/ke8kO743IFjHK4W0BGDr9ZlbI10.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --dark-green: #1E2827;
+    --black: #141414;
+    --white: #FFF;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'epilogue', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+figure {
+    margin: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 100%;
+    }
+
+}
