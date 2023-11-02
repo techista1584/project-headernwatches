@@ -291,7 +291,7 @@
 @media screen and (min-width: 1280px) {
 
     .header{
-        padding: 34px 132px 0;
+        padding: 34px 132px 95px;
     }
     .header-logo-text {
         font-size: 15px;
