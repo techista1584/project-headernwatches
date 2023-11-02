@@ -1,4 +1,3 @@
-
 .header {
     width: 100%;
     position: fixed;
@@ -37,6 +36,27 @@
 .header-list {
     display: flex;
 }
+
+.underline:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    opacity: 0.7;
+    position: absolute;
+    top: 90%;
+    right: 0px;
+    left: auto;
+    width: 0%;
+    transition: width 250ms var(--cubic);
+}
+  
+ .underline:hover:before,
+ .underline:focus:before {
+     width: 100%;
+     right: auto;
+     left: 0px;
+ }
 
 .burger {
     display: none;
@@ -91,24 +111,7 @@
     }
     
     .underline:before {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background: var(--white);
-        opacity: 0.7;
-        position: absolute;
-        top: 95%;
-        right: 0px;
-        left: auto;
-        width: 0%;
-        transition: width 250ms var(--cubic);
-    }
-    
-    .underline:hover:before,
-    .underline:focus:before {
-        width: 100%;
-        right: auto;
-        left: 0px;
+        top: 120%;
     }
 
     .header-contact-phone {
@@ -227,7 +230,7 @@
         width: auto;
     }
 
-    .underline:before {
+    /* .underline:before {
         content: '';
         width: 100%;
         height: 1px;
@@ -239,15 +242,15 @@
         left: auto;
         width: 0%;
         transition: width 250ms var(--cubic);
-    }
+    } */
 
-    .underline:hover:before,
+    /* .underline:hover:before,
     .underline:focus:before {
         width: 100%;
         right: auto;
         left: 0px;
         height:1px;
-    }
+    } */
 
     .button {
         display: inline-flex;
