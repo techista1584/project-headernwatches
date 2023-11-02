@@ -218,7 +218,7 @@
     }
 }
 
-// Desktop View
+/* // Desktop View */
 @media screen and (min-width: 1280px) {
     .hero {
         margin: 0 auto;
