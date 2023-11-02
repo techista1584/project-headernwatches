@@ -36,14 +36,15 @@
 }
 
 .green {
-   background: url(../images/nwatch/green1x.jpg), lightgray 50% / contain no-repeat;
+   background: url(../images/nwatch/green@2x.jpg), lightgray 50% / contain no-repeat;
    background-size: 100%;
 }
 
 .bronze {
-   background: url(../images/nwatch/bronze1x.jpg), lightgray 50% / cover no-repeat;
+   background: url(../images/nwatch/bronze@2x.jpg), lightgray 50% / cover no-repeat;
    background-size: 100%;
 }
+
 
 @media screen and (min-width:768px){
 
